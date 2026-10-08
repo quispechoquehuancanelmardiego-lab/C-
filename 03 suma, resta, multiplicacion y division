@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main () {
+	//definir varible
+	int numero1, numero2;
+	int suma, resta, multiplicacion, division;
+	//entrada
+	cout << "ingrese el numero 1 y el numero 2 para realizar las cuatros operaciones suma, resta, multiplicacion y divicion :) \n";
+	cout <<"ingrese el numero 1: ";
+	cin>> numero1;
+	cout <<"ingrese el numero 2: ";
+	cin>> numero2;
+	//proceso
+	suma=numero1+numero2;
+	resta=numero1-numero2;
+	multiplicacion=numero1*numero2;
+	division = numero1 / numero2;
+	//salida
+	cout <<"el resultado de la suma es: " <<suma <<"\n";
+	cout<< "el resultado de la resta es: " <<resta <<"\n";
+	cout << "el resultado de la multiplicacion es: " <<multiplicacion <<"\n";
+	cout<< "El resultado de la division es: " <<division <<"\n";
+	
+	return 0;
+}

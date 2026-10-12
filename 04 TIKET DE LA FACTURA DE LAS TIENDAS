@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main () {
+	//realize un programa que pertite realizar
+	//la factura que permita las tiendas en distintos lugares .
+	//con los siguientes datos: clientes, producto, cantidad, precio, sub total y total
+	//definir varibles
+	string producto_1, producto_2, cliente ;
+	int CI, cantidad_1 ,cantidad_2, precio1, precio2, sub_total_1, sub_total_2, total ;
+	//entrada
+	cout<< "ingrese el nombre del cliente: ";
+	getline(cin, cliente);
+	cout <<"ingrese el NIT. o su celula de identidad del cliente: ";
+	cin>> CI;
+	cin.ignore(); 
+	cout<<"------------------------------------------------------------\n"; 
+	cout<< "ingrese el nombre del primer producto que va a comprar: ";
+    getline(cin, producto_1);
+	cout<< "ingrese la cantidad del primer producto: ";
+	cin >> cantidad_1;
+    cout<< "ingrese el presio del primer producto: ";
+	cin>> precio1;
+	cout<<"------------------------------------------------------------\n";
+	cin.ignore(); 
+	cout<< "ingrese el nombre del segundo producto que va a comprar: ";
+	getline(cin, producto_2);
+	cout<< "ingrese la cantidad del  segundo producto: ";
+	cin>> cantidad_2;
+    cout<< "ingrese el presio del segundo producto: ";
+	cin>> precio2;
+	//proceso
+    sub_total_1=precio1*cantidad_1;
+    sub_total_2=precio2*cantidad_2;
+    total=sub_total_1+sub_total_2;
+	//SALIDA
+	cout<< "======================================\n";
+	cout<< "      FACTURA DE LIBRERIA SOLES            \n ";
+	cout<< "======================================\n";
+	cout<< "NOMBRE DEL CLIENTE: "<< cliente<< "\n";
+	cout<< "NIT O CI.: "<<CI <<" CI.\n";
+	cout <<"--------------------------------------\n";
+	cout<< "producto 1: "<< producto_1<< "\n";
+	cout<< "cantidad: "<< cantidad_1<< "\n";
+	cout<< "precio: "<< precio1 << " Bs\n";
+	cout<<"_______________________________________"<<endl;
+	cout<< "producto 2: "<< producto_2<< "\n";
+	cout<< "cantidad: "<< cantidad_2<< "\n";
+	cout<< "precio: "<< precio2<< " Bs\n";
+	cout <<"--------------------------------------\n";
+	cout<<"subtotal producto 1: "<< sub_total_1<< " Bs.\n";
+	cout<<"subtotal producto 2: "<< sub_total_2<< " Bs.\n";
+	cout<< "IVA Incluido:  Bs" <<endl;
+	cout<< "total a pagar: " <<total<< " Bs\n";
+	cout<< "======================================\n";
+	cout<< "         GRACIAS POR SU COMPRA :)      \n";
+	cout<< "======================================\n";
+	return 0;
+}

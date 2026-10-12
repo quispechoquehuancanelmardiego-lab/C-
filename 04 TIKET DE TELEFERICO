@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main () {
+	//REALIZA UN PROGRAMA QUE PERMITA SIMULAR EL TIKE
+	//DE LA EMPRESA MI TELEFERICO CON LOS SIGUIENTES DATOS:
+	//color de linea
+	//numero de factura
+	//tarifa
+	//candidad de pasajeros
+	//total de precio
+	//DEFINIR VARIABLES
+	string color ;
+	int factura, tarifa, candidad, total ;
+	//entrada
+	cout<< "ingrese el color de linea del teleferico: ";
+	cin>> color;
+	cout<< "ingrese el numero de factura: ";
+	cin>> factura;
+	cout<< "ingrese la tarifa: ";
+	cin>> tarifa;
+	cout<< "ingrese la candidad de pasajeros: ";
+	cin>> candidad;
+	//Proceso 
+	total=tarifa*candidad;
+	//SALIDA
+	cout<< "======================================\n";
+	cout<< "           MI  TELEFERICO            \n ";
+	cout<< "======================================\n";
+	cout<< "LINEA: "<< color<< "\n";
+	cout<< "FACTURA: "<< factura << "\n";
+	cout<< "TARIFA: " <<tarifa<< " Bs\n";
+	cout<< "CANDIDAD: "<< candidad <<" Pasejeros\n";
+	cout<< "SUB TOTAL: " <<total <<" Bs\n";
+	cout<< "TOTAL A PAGAR: "  <<total <<" Bs\n";
+	cout<< "======================================\n";
+	cout<< "     GRACIAS POR USAR MI TELEFERICO      \n";
+	cout<< "======================================\n";
+return 0;
+}
